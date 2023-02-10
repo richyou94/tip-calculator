@@ -12,6 +12,7 @@ bill_include_tip = total_bill * (1 + (percentage_tip / 100))
 bill_per_person = bill_include_tip / people_split
 # It will be better if I can limit the result into two decimals
 result = round(bill_per_person, 2)
+result = "{:.2f}".format(result)
 
 print(f'Each person should pay: ${result}')
 
