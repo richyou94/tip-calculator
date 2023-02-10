@@ -7,9 +7,10 @@ percentage_tip = int(input('What percentage tip would you like to give? 10, 12, 
 
 people_split = int(input('How many people to split the bill? '))
 
-bill_include_tip = total_bill * (1 + (percentage_tip / 100))
+bill_include_tip = round(total_bill * (1 + (percentage_tip / 100)), 2)
 
-print(round(bill_include_tip, 2))
+print(bill_include_tip)
+
 
 
 # result = 0
